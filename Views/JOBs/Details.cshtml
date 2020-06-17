@@ -1,0 +1,50 @@
+﻿@model ROUTEJOBS1.Models.JOB
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>JOB</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateJob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateJob)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESTINATION.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESTINATION.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPLOYEE.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPLOYEE.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Warehouse.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Warehouse.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
